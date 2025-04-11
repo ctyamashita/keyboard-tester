@@ -1,0 +1,44 @@
+.ShiftRight {
+  width: calc(var(--key-size) * 3.25);
+}
+
+.CapsLock,
+#kb-65 .ShiftRight,
+#kb-75 .ShiftRight {
+  width: calc(var(--key-size) * 2);
+}
+
+.ShiftLeft,
+.Enter {
+  width: calc(var(--key-size) * 2.5);
+}
+
+.ControlLeft, 
+.AltLeft, 
+.MetaLeft,
+.MetaRight {
+  width: calc(var(--key-size) * 1.25);
+}
+
+#kb-65 .gap,
+#kb-75 .gap {
+  width: calc(var(--key-size) * .5);
+  /* box-shadow: -0.675rem 1.4rem 0 -0.675rem gold, 0 1rem 0 0 orange, inset .15rem .15rem 0 0 gold; */
+  box-shadow: var(--outer-shadow-border);
+  background-color: orange;
+  border-radius: .25rem .25rem 0 0;
+}
+
+.h-gap {
+  height: calc(var(--key-size) * .5);
+}
+
+.h-gap-arrow {
+  height: calc(var(--key-size) * 1.25);
+}
+
+.h-gap-numpad {
+  height: calc(var(--key-size) + 1rem);
+  box-shadow: inset 0 0 .5rem 0 chocolate, var(--inner-shadow-border);
+  border-radius: .75rem;
+}

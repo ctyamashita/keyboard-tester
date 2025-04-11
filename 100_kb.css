@@ -1,0 +1,128 @@
+#kb-100, #kb-80 {
+  display: flex;
+  gap: .25rem;
+}
+
+#kb-100 .Backspace,
+#kb-80 .Backspace {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 2);
+}
+
+#kb-100 .Tab,
+#kb-80 .Tab {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 1.5);
+}
+
+#kb-100 .Backslash,
+#kb-80 .Backslash {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 1.5);
+}
+
+#kb-100 .Enter,
+#kb-80 .Enter {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 2.25);
+}
+
+#kb-100 .ShiftRight,
+#kb-80 .ShiftRight {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 3);
+}
+
+#kb-100 .Space,
+#kb-80 .Space {
+  flex-grow: 0;
+  width: calc(var(--key-size) * 7.75);
+}
+
+#kb-100 .AltRight,
+#kb-80 .AltRight,
+#kb-100 .ControlRight,
+#kb-80 .ControlRight,
+#kb-100 .MetaRight,
+#kb-80 .MetaRight,
+#kb-100 .Fn,
+#kb-80 .Fn {
+  width: calc(var(--key-size) * 1.25);
+}
+
+#kb-100 .arrow-gap,
+#kb-80 .arrow-gap {
+  width: calc(var(--key-size) + .5rem);
+}
+
+#kb-100 .section-arrow .arrow-gap:first-child,
+#kb-80 .section-arrow .arrow-gap:first-child {
+  height: 80%;
+  width: 25%;
+  margin-top: auto;
+  margin-left: auto;
+  box-shadow: inset -.1rem -.1rem 0 0 chocolate, .2rem .2rem 0 0;
+  border-bottom-right-radius: .25rem;
+  z-index: 2;
+}
+
+#kb-100 .section-arrow .arrow-gap:last-child,
+#kb-80 .section-arrow .arrow-gap:last-child {
+  height: 80%;
+  width: 25%;
+  margin-right: auto;
+  margin-top: auto;
+  box-shadow: inset .1rem -.1rem 0 0 chocolate, -.2rem .2rem 0 0;
+  border-bottom-left-radius: .25rem;
+  z-index: 2;
+}
+
+#kb-100 .numpad .Numpad0,
+#kb-80 .numpad .Numpad0 {
+  width: calc(var(--key-size) * 2.25);
+}
+
+#kb-100 .numpad .row:has(.Enter),
+#kb-80 .numpad .row:has(.Enter),
+#kb-100 .numpad .row:has(.NumpadAdd),
+#kb-80 .numpad .row:has(.NumpadAdd) {
+  position: relative;
+}
+
+#kb-100 .numpad .Enter,
+#kb-80 .numpad .Enter,
+#kb-100 .numpad .NumpadAdd,
+#kb-80 .numpad .NumpadAdd {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: var(--key-size) !important;
+  height: calc(var(--key-size) * 2.25);
+}
+
+#kb-100 .section-arrow,
+#kb-80 .section-arrow {
+  display: grid;
+  width: fit-content;
+  border-radius: .75rem;
+}
+
+#kb-100 .section-arrow .row:first-child,
+#kb-80 .section-arrow .row:first-child {
+  padding: 0 .25rem;
+}
+
+#kb-100 .section-arrow .row:first-child .key,
+#kb-80 .section-arrow .row:first-child .key {
+  box-shadow: 0 0 0 .25rem var(--black), -.2rem -.2rem 0 .15rem chocolate, .2rem -.2rem 0 0.15rem chocolate;
+  z-index: 99;
+}
+
+#kb-100 .section-arrow .row:last-child,
+#kb-80 .section-arrow .row:last-child {
+  z-index: 1;
+  background-color: var(--black);
+  padding: .25rem;
+  border-radius: .75rem;
+  box-shadow: var(--inner-shadow-border);
+}
