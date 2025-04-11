@@ -1,7 +1,6 @@
 document.addEventListener('keydown', e => {
-    e.stopPropagation()
     const keyId = e.code;
-    if (keyId === 'Tab' || keyId === 'Space') e.preventDefault()
+    e.preventDefault()
     const keys = document.querySelectorAll(`.${keyId}`)
     keys.forEach(key=>{
         if (key.classList.contains('pressing')) return;
