@@ -173,6 +173,10 @@ select {
     width: calc(var(--key-size) * .3125);
 }
 
+.keyboard-case .gap.esc {
+    flex-grow: 1;
+}
+
 .keyboard {
     margin: 0 auto;
     width: fit-content;
