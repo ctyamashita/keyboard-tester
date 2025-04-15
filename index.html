@@ -10,64 +10,381 @@
 </head>
 <body>
     <h1>[Keyboard Tester]</h1>
-    <div class="screen">
-        <span id="cursor">_</span>
+    <div class="screen-container">
+        <div class="screen">
+            <span id="cursor">_</span>
+        </div>
     </div>
     <div class="keyboard-container">
-        <div class="options">
-            <select id="kb-layout">
-                <option value="kb-100">100% Layout (Full-size)</option>
-                <option value="kb-80">80% Layout (TKL)</option>
-                <option value="kb-75">75% Layout</option>
-                <option value="kb-65">65% Layout</option>
-                <option value="kb-60">60% Layout</option>
-            </select>
-            <div class="slidecontainer">
-                <input type="range" id="color-slider" min="-180" max="180" value="0" class="slider">
+        <div class="frame">
+            <div class="options">
+                <select id="kb-layout">
+                    <option value="kb-100">100% Layout (Full-size)</option>
+                    <option value="kb-80">80% Layout (TKL)</option>
+                    <option value="kb-75">75% Layout</option>
+                    <option value="kb-65">65% Layout</option>
+                    <option value="kb-60">60% Layout</option>
+                </select>
+                <div class="slidecontainer">
+                    <input type="range" id="color-slider" min="-180" max="180" value="0" class="slider">
+                </div>
+                <button class="reset-btn"><i class="fa-solid fa-rotate-right"></i></button>
             </div>
-            <button class="reset-btn"><i class="fa-solid fa-rotate-right"></i></button>
-        </div>
-    
-        <div class="keyboard-border">
-            <div class="keyboard-case">
-                <div id="kb-100">
-                    <div>
-                        <div class="row">
-                            <div class="section">
-                                <div class="row">
-                                    <div class="key Escape"><span>Esc</span></div>
+        
+            <div class="keyboard-border">
+                <div class="keyboard-case">
+                    <div id="kb-100">
+                        <div>
+                            <div class="row">
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key Escape"><span>Esc</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap esc"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F1"><span>F1</span></div>
+                                        <div class="key F2"><span>F2</span></div>
+                                        <div class="key F3"><span>F3</span></div>
+                                        <div class="key F4"><span>F4</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F5"><span>F5</span></div>
+                                        <div class="key F6"><span>F6</span></div>
+                                        <div class="key F7"><span>F7</span></div>
+                                        <div class="key F8"><span>F8</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F9"><span>F9</span></div>
+                                        <div class="key F10"><span>F10</span></div>
+                                        <div class="key F11"><span>F11</span></div>
+                                        <div class="key F12"><span>F12</span></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="gap esc"></div>
+                            <div class="h-gap"></div>
                             <div class="section">
                                 <div class="row">
-                                    <div class="key F1"><span>F1</span></div>
-                                    <div class="key F2"><span>F2</span></div>
-                                    <div class="key F3"><span>F3</span></div>
-                                    <div class="key F4"><span>F4</span></div>
+                                    <div class="key Backquote"><span>`</span></div>
+                                    <div class="key Digit1"><span>1</span></div>
+                                    <div class="key Digit2"><span>2</span></div>
+                                    <div class="key Digit3"><span>3</span></div>
+                                    <div class="key Digit4"><span>4</span></div>
+                                    <div class="key Digit5"><span>5</span></div>
+                                    <div class="key Digit6"><span>6</span></div>
+                                    <div class="key Digit7"><span>7</span></div>
+                                    <div class="key Digit8"><span>8</span></div>
+                                    <div class="key Digit9"><span>9</span></div>
+                                    <div class="key Digit0"><span>0</span></div>
+                                    <div class="key Minus"><span>-</span></div>
+                                    <div class="key Equal"><span>=</span></div>
+                                    <div class="key Backspace"><span>Backspace</span></div>
                                 </div>
-                            </div>
-                            <div class="gap"></div>
-                            <div class="section">
                                 <div class="row">
-                                    <div class="key F5"><span>F5</span></div>
-                                    <div class="key F6"><span>F6</span></div>
-                                    <div class="key F7"><span>F7</span></div>
-                                    <div class="key F8"><span>F8</span></div>
+                                    <div class="key Tab"><span>Tab</div>
+                                    <div class="key KeyQ"><span>Q</span></div>
+                                    <div class="key KeyW"><span>W</span></div>
+                                    <div class="key KeyE"><span>E</span></div>
+                                    <div class="key KeyR"><span>R</span></div>
+                                    <div class="key KeyT"><span>T</span></div>
+                                    <div class="key KeyY"><span>Y</span></div>
+                                    <div class="key KeyU"><span>U</span></div>
+                                    <div class="key KeyI"><span>I</span></div>
+                                    <div class="key KeyO"><span>O</span></div>
+                                    <div class="key KeyP"><span>P</span></div>
+                                    <div class="key BracketLeft"><span>[</span></div>
+                                    <div class="key BracketRight"><span>]</span></div>
+                                    <div class="key Backslash"><span>\</span></div>
                                 </div>
-                            </div>
-                            <div class="gap"></div>
-                            <div class="section">
                                 <div class="row">
-                                    <div class="key F9"><span>F9</span></div>
-                                    <div class="key F10"><span>F10</span></div>
-                                    <div class="key F11"><span>F11</span></div>
-                                    <div class="key F12"><span>F12</span></div>
+                                    <div class="key CapsLock"><span>Caps Lock</span></div>
+                                    <div class="key KeyA"><span>A</span></div>
+                                    <div class="key KeyS"><span>S</span></div>
+                                    <div class="key KeyD"><span>D</span></div>
+                                    <div class="key KeyF"><span>F</span></div>
+                                    <div class="key KeyG"><span>G</span></div>
+                                    <div class="key KeyH"><span>H</span></div>
+                                    <div class="key KeyJ"><span>J</span></div>
+                                    <div class="key KeyK"><span>K</span></div>
+                                    <div class="key KeyL"><span>L</span></div>
+                                    <div class="key Semicolon"><span>;</span></div>
+                                    <div class="key Quote"><span>'</span></div>
+                                    <div class="key Enter"><span>Enter</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ShiftLeft"><span>Shift</span></div>
+                                    <div class="key KeyZ"><span>Z</span></div>
+                                    <div class="key KeyX"><span>X</span></div>
+                                    <div class="key KeyC"><span>C</span></div>
+                                    <div class="key KeyV"><span>V</span></div>
+                                    <div class="key KeyB"><span>B</span></div>
+                                    <div class="key KeyN"><span>N</span></div>
+                                    <div class="key KeyM"><span>M</span></div>
+                                    <div class="key Comma"><span>,</span></div>
+                                    <div class="key Period"><span>.</span></div>
+                                    <div class="key Slash"><span>/</span></div>
+                                    <div class="key ShiftRight"><span>Shift</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ControlLeft"><span>Ctrl</span></div>
+                                    <div class="key AltLeft"><span>Alt</span></div>
+                                    <div class="key MetaLeft"><span>Win</span></div>
+                                    <div class="key Space"><span>Space</span></div>
+                                    <div class="key AltRight"><span>Alt</span></div>
+                                    <div class="key MetaRight"><span>Win</span></div>
+                                    <div class="key Fn"><span>Fn</span></div>
+                                    <div class="key ControlRight"><span>Ctrl</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="h-gap"></div>
+                        <div class="gap"></div>
+                        <div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key PrintScreen"><span>PrtSc</span></div>
+                                    <div class="key ScrollLock"><span>Scroll<br>Lock</span></div>
+                                    <div class="key Pause"><span>Pause</span></div>
+                                </div>
+                            </div>
+                            <div class="h-gap"></div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key Insert"><span>Insert</span></div>
+                                    <div class="key Home"><span>Home</span></div>
+                                    <div class="key PageUp"><span>Page<br>Up</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Delete"><span>Del</span></div>
+                                    <div class="key End"><span>End</span></div>
+                                    <div class="key PageDown"><span>Page<br>Down</span></div>
+                                </div>
+                            </div>
+                            <div class="h-gap-arrow"></div>
+                            <div class="section-arrow">
+                                <div class="row">
+                                    <div class="arrow-gap"></div>
+                                    <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                    <div class="arrow-gap"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
+                                    <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
+                                    <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div>
+                            <div class="h-gap-numpad"></div>
+                            <div class="h-gap"></div>
+                            <div class="section numpad">
+                                <div class="row">
+                                    <div class="key NumLock">Num<br>Lock</div>
+                                    <div class="key NumpadDivide">/</div>
+                                    <div class="key NumpadMultiply">*</div>
+                                    <div class="key Minus">-</div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Numpad7">7</div>
+                                    <div class="key Numpad8">8</div>
+                                    <div class="key Numpad9">9</div>
+                                    <div class="key NumpadAdd">+</div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Numpad4">4</div>
+                                    <div class="key Numpad5">5</div>
+                                    <div class="key Numpad6">6</div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Numpad1">1</div>
+                                    <div class="key Numpad2">2</div>
+                                    <div class="key Numpad3">3</div>
+                                    <div class="key Enter">Enter</div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Numpad0">0</div>
+                                    <div class="key NumpadDecimal">.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="kb-80" class="hide">
+                        <div>
+                            <div class="row">
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key Escape"><span>Esc</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap esc"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F1"><span>F1</span></div>
+                                        <div class="key F2"><span>F2</span></div>
+                                        <div class="key F3"><span>F3</span></div>
+                                        <div class="key F4"><span>F4</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F5"><span>F5</span></div>
+                                        <div class="key F6"><span>F6</span></div>
+                                        <div class="key F7"><span>F7</span></div>
+                                        <div class="key F8"><span>F8</span></div>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="key F9"><span>F9</span></div>
+                                        <div class="key F10"><span>F10</span></div>
+                                        <div class="key F11"><span>F11</span></div>
+                                        <div class="key F12"><span>F12</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-gap"></div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key Backquote"><span>`</span></div>
+                                    <div class="key Digit1"><span>1</span></div>
+                                    <div class="key Digit2"><span>2</span></div>
+                                    <div class="key Digit3"><span>3</span></div>
+                                    <div class="key Digit4"><span>4</span></div>
+                                    <div class="key Digit5"><span>5</span></div>
+                                    <div class="key Digit6"><span>6</span></div>
+                                    <div class="key Digit7"><span>7</span></div>
+                                    <div class="key Digit8"><span>8</span></div>
+                                    <div class="key Digit9"><span>9</span></div>
+                                    <div class="key Digit0"><span>0</span></div>
+                                    <div class="key Minus"><span>-</span></div>
+                                    <div class="key Equal"><span>=</span></div>
+                                    <div class="key Backspace"><span>Backspace</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Tab"><span>Tab</div>
+                                    <div class="key KeyQ"><span>Q</span></div>
+                                    <div class="key KeyW"><span>W</span></div>
+                                    <div class="key KeyE"><span>E</span></div>
+                                    <div class="key KeyR"><span>R</span></div>
+                                    <div class="key KeyT"><span>T</span></div>
+                                    <div class="key KeyY"><span>Y</span></div>
+                                    <div class="key KeyU"><span>U</span></div>
+                                    <div class="key KeyI"><span>I</span></div>
+                                    <div class="key KeyO"><span>O</span></div>
+                                    <div class="key KeyP"><span>P</span></div>
+                                    <div class="key BracketLeft"><span>[</span></div>
+                                    <div class="key BracketRight"><span>]</span></div>
+                                    <div class="key Backslash"><span>\</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key CapsLock"><span>Caps Lock</span></div>
+                                    <div class="key KeyA"><span>A</span></div>
+                                    <div class="key KeyS"><span>S</span></div>
+                                    <div class="key KeyD"><span>D</span></div>
+                                    <div class="key KeyF"><span>F</span></div>
+                                    <div class="key KeyG"><span>G</span></div>
+                                    <div class="key KeyH"><span>H</span></div>
+                                    <div class="key KeyJ"><span>J</span></div>
+                                    <div class="key KeyK"><span>K</span></div>
+                                    <div class="key KeyL"><span>L</span></div>
+                                    <div class="key Semicolon"><span>;</span></div>
+                                    <div class="key Quote"><span>'</span></div>
+                                    <div class="key Enter"><span>Enter</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ShiftLeft"><span>Shift</span></div>
+                                    <div class="key KeyZ"><span>Z</span></div>
+                                    <div class="key KeyX"><span>X</span></div>
+                                    <div class="key KeyC"><span>C</span></div>
+                                    <div class="key KeyV"><span>V</span></div>
+                                    <div class="key KeyB"><span>B</span></div>
+                                    <div class="key KeyN"><span>N</span></div>
+                                    <div class="key KeyM"><span>M</span></div>
+                                    <div class="key Comma"><span>,</span></div>
+                                    <div class="key Period"><span>.</span></div>
+                                    <div class="key Slash"><span>/</span></div>
+                                    <div class="key ShiftRight"><span>Shift</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ControlLeft"><span>Ctrl</span></div>
+                                    <div class="key AltLeft"><span>Alt</span></div>
+                                    <div class="key MetaLeft"><span>Win</span></div>
+                                    <div class="key Space"><span>Space</span></div>
+                                    <div class="key AltRight"><span>Alt</span></div>
+                                    <div class="key MetaRight"><span>Win</span></div>
+                                    <div class="key Fn"><span>Fn</span></div>
+                                    <div class="key ControlRight"><span>Ctrl</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key PrintScreen"><span>PrtSc</span></div>
+                                    <div class="key ScrollLock"><span>Scroll<br>Lock</span></div>
+                                    <div class="key Pause"><span>Pause</span></div>
+                                </div>
+                            </div>
+                            <div class="h-gap"></div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key Insert"><span>Insert</span></div>
+                                    <div class="key Home"><span>Home</span></div>
+                                    <div class="key PageUp"><span>Page<br>Up</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Delete"><span>Del</span></div>
+                                    <div class="key End"><span>End</span></div>
+                                    <div class="key PageDown"><span>Page<br>Down</span></div>
+                                </div>
+                            </div>
+                            <div class="h-gap-arrow"></div>
+                            <div class="section-arrow">
+                                <div class="row">
+                                    <div class="arrow-gap"></div>
+                                    <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                    <div class="arrow-gap"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
+                                    <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
+                                    <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="kb-75" class="hide">
                         <div class="section">
+                            <div class="row">
+                                <div class="key Escape"><span>Esc</span></div>
+                                <div class="key F1"><span>F1</span></div>
+                                <div class="key F2"><span>F2</span></div>
+                                <div class="key F3"><span>F3</span></div>
+                                <div class="key F4"><span>F4</span></div>
+                                <div class="key F5"><span>F5</span></div>
+                                <div class="key F6"><span>F6</span></div>
+                                <div class="key F7"><span>F7</span></div>
+                                <div class="key F8"><span>F8</span></div>
+                                <div class="key F9"><span>F9</span></div>
+                                <div class="key F10"><span>F10</span></div>
+                                <div class="key F11"><span>F11</span></div>
+                                <div class="key F12"><span>F12</span></div>
+                                <div class="key PrintScreen"><span>PrtSc</span></div>
+                                <div class="key Insert"><span>Insert</span></div>
+                                <div class="key Delete"><span>Del</span></div>
+                            </div>
                             <div class="row">
                                 <div class="key Backquote"><span>`</span></div>
                                 <div class="key Digit1"><span>1</span></div>
@@ -83,6 +400,7 @@
                                 <div class="key Minus"><span>-</span></div>
                                 <div class="key Equal"><span>=</span></div>
                                 <div class="key Backspace"><span>Backspace</span></div>
+                                <div class="key Home"><span>Home</span></div>
                             </div>
                             <div class="row">
                                 <div class="key Tab"><span>Tab</div>
@@ -99,6 +417,7 @@
                                 <div class="key BracketLeft"><span>[</span></div>
                                 <div class="key BracketRight"><span>]</span></div>
                                 <div class="key Backslash"><span>\</span></div>
+                                <div class="key PageUp"><span>Page<br>Up</span></div>
                             </div>
                             <div class="row">
                                 <div class="key CapsLock"><span>Caps Lock</span></div>
@@ -114,6 +433,7 @@
                                 <div class="key Semicolon"><span>;</span></div>
                                 <div class="key Quote"><span>'</span></div>
                                 <div class="key Enter"><span>Enter</span></div>
+                                <div class="key PageDown"><span>Page<br>Down</span></div>
                             </div>
                             <div class="row">
                                 <div class="key ShiftLeft"><span>Shift</span></div>
@@ -128,6 +448,8 @@
                                 <div class="key Period"><span>.</span></div>
                                 <div class="key Slash"><span>/</span></div>
                                 <div class="key ShiftRight"><span>Shift</span></div>
+                                <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                <div class="key End"><span>End</span></div>
                             </div>
                             <div class="row">
                                 <div class="key ControlLeft"><span>Ctrl</span></div>
@@ -135,421 +457,17 @@
                                 <div class="key MetaLeft"><span>Win</span></div>
                                 <div class="key Space"><span>Space</span></div>
                                 <div class="key AltRight"><span>Alt</span></div>
-                                <div class="key MetaRight"><span>Win</span></div>
                                 <div class="key Fn"><span>Fn</span></div>
                                 <div class="key ControlRight"><span>Ctrl</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gap"></div>
-                    <div>
-                        <div class="section">
-                            <div class="row">
-                                <div class="key PrintScreen"><span>PrtSc</span></div>
-                                <div class="key ScrollLock"><span>Scroll<br>Lock</span></div>
-                                <div class="key Pause"><span>Pause</span></div>
-                            </div>
-                        </div>
-                        <div class="h-gap"></div>
-                        <div class="section">
-                            <div class="row">
-                                <div class="key Insert"><span>Insert</span></div>
-                                <div class="key Home"><span>Home</span></div>
-                                <div class="key PageUp"><span>Page<br>Up</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key Delete"><span>Del</span></div>
-                                <div class="key End"><span>End</span></div>
-                                <div class="key PageDown"><span>Page<br>Down</span></div>
-                            </div>
-                        </div>
-                        <div class="h-gap-arrow"></div>
-                        <div class="section-arrow">
-                            <div class="row">
-                                <div class="arrow-gap"></div>
-                                <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
-                                <div class="arrow-gap"></div>
-                            </div>
-                            <div class="row">
+                                <div class="gap"></div>
                                 <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
                                 <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
                                 <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="gap"></div>
-                    <div>
-                        <div class="h-gap-numpad"></div>
-                        <div class="h-gap"></div>
-                        <div class="section numpad">
-                            <div class="row">
-                                <div class="key NumLock">Num<br>Lock</div>
-                                <div class="key NumpadDivide">/</div>
-                                <div class="key NumpadMultiply">*</div>
-                                <div class="key Minus">-</div>
-                            </div>
-                            <div class="row">
-                                <div class="key Numpad7">7</div>
-                                <div class="key Numpad8">8</div>
-                                <div class="key Numpad9">9</div>
-                                <div class="key NumpadAdd">+</div>
-                            </div>
-                            <div class="row">
-                                <div class="key Numpad4">4</div>
-                                <div class="key Numpad5">5</div>
-                                <div class="key Numpad6">6</div>
-                            </div>
-                            <div class="row">
-                                <div class="key Numpad1">1</div>
-                                <div class="key Numpad2">2</div>
-                                <div class="key Numpad3">3</div>
-                                <div class="key Enter">Enter</div>
-                            </div>
-                            <div class="row">
-                                <div class="key Numpad0">0</div>
-                                <div class="key NumpadDecimal">.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div id="kb-80" class="hide">
-                    <div>
-                        <div class="row">
-                            <div class="section">
-                                <div class="row">
-                                    <div class="key Escape"><span>Esc</span></div>
-                                </div>
-                            </div>
-                            <div class="gap esc"></div>
-                            <div class="section">
-                                <div class="row">
-                                    <div class="key F1"><span>F1</span></div>
-                                    <div class="key F2"><span>F2</span></div>
-                                    <div class="key F3"><span>F3</span></div>
-                                    <div class="key F4"><span>F4</span></div>
-                                </div>
-                            </div>
-                            <div class="gap"></div>
-                            <div class="section">
-                                <div class="row">
-                                    <div class="key F5"><span>F5</span></div>
-                                    <div class="key F6"><span>F6</span></div>
-                                    <div class="key F7"><span>F7</span></div>
-                                    <div class="key F8"><span>F8</span></div>
-                                </div>
-                            </div>
-                            <div class="gap"></div>
-                            <div class="section">
-                                <div class="row">
-                                    <div class="key F9"><span>F9</span></div>
-                                    <div class="key F10"><span>F10</span></div>
-                                    <div class="key F11"><span>F11</span></div>
-                                    <div class="key F12"><span>F12</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-gap"></div>
-                        <div class="section">
-                            <div class="row">
-                                <div class="key Backquote"><span>`</span></div>
-                                <div class="key Digit1"><span>1</span></div>
-                                <div class="key Digit2"><span>2</span></div>
-                                <div class="key Digit3"><span>3</span></div>
-                                <div class="key Digit4"><span>4</span></div>
-                                <div class="key Digit5"><span>5</span></div>
-                                <div class="key Digit6"><span>6</span></div>
-                                <div class="key Digit7"><span>7</span></div>
-                                <div class="key Digit8"><span>8</span></div>
-                                <div class="key Digit9"><span>9</span></div>
-                                <div class="key Digit0"><span>0</span></div>
-                                <div class="key Minus"><span>-</span></div>
-                                <div class="key Equal"><span>=</span></div>
-                                <div class="key Backspace"><span>Backspace</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key Tab"><span>Tab</div>
-                                <div class="key KeyQ"><span>Q</span></div>
-                                <div class="key KeyW"><span>W</span></div>
-                                <div class="key KeyE"><span>E</span></div>
-                                <div class="key KeyR"><span>R</span></div>
-                                <div class="key KeyT"><span>T</span></div>
-                                <div class="key KeyY"><span>Y</span></div>
-                                <div class="key KeyU"><span>U</span></div>
-                                <div class="key KeyI"><span>I</span></div>
-                                <div class="key KeyO"><span>O</span></div>
-                                <div class="key KeyP"><span>P</span></div>
-                                <div class="key BracketLeft"><span>[</span></div>
-                                <div class="key BracketRight"><span>]</span></div>
-                                <div class="key Backslash"><span>\</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key CapsLock"><span>Caps Lock</span></div>
-                                <div class="key KeyA"><span>A</span></div>
-                                <div class="key KeyS"><span>S</span></div>
-                                <div class="key KeyD"><span>D</span></div>
-                                <div class="key KeyF"><span>F</span></div>
-                                <div class="key KeyG"><span>G</span></div>
-                                <div class="key KeyH"><span>H</span></div>
-                                <div class="key KeyJ"><span>J</span></div>
-                                <div class="key KeyK"><span>K</span></div>
-                                <div class="key KeyL"><span>L</span></div>
-                                <div class="key Semicolon"><span>;</span></div>
-                                <div class="key Quote"><span>'</span></div>
-                                <div class="key Enter"><span>Enter</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key ShiftLeft"><span>Shift</span></div>
-                                <div class="key KeyZ"><span>Z</span></div>
-                                <div class="key KeyX"><span>X</span></div>
-                                <div class="key KeyC"><span>C</span></div>
-                                <div class="key KeyV"><span>V</span></div>
-                                <div class="key KeyB"><span>B</span></div>
-                                <div class="key KeyN"><span>N</span></div>
-                                <div class="key KeyM"><span>M</span></div>
-                                <div class="key Comma"><span>,</span></div>
-                                <div class="key Period"><span>.</span></div>
-                                <div class="key Slash"><span>/</span></div>
-                                <div class="key ShiftRight"><span>Shift</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key ControlLeft"><span>Ctrl</span></div>
-                                <div class="key AltLeft"><span>Alt</span></div>
-                                <div class="key MetaLeft"><span>Win</span></div>
-                                <div class="key Space"><span>Space</span></div>
-                                <div class="key AltRight"><span>Alt</span></div>
-                                <div class="key MetaRight"><span>Win</span></div>
-                                <div class="key Fn"><span>Fn</span></div>
-                                <div class="key ControlRight"><span>Ctrl</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gap"></div>
-                    <div>
-                        <div class="section">
-                            <div class="row">
-                                <div class="key PrintScreen"><span>PrtSc</span></div>
-                                <div class="key ScrollLock"><span>Scroll<br>Lock</span></div>
-                                <div class="key Pause"><span>Pause</span></div>
-                            </div>
-                        </div>
-                        <div class="h-gap"></div>
-                        <div class="section">
-                            <div class="row">
-                                <div class="key Insert"><span>Insert</span></div>
-                                <div class="key Home"><span>Home</span></div>
-                                <div class="key PageUp"><span>Page<br>Up</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="key Delete"><span>Del</span></div>
-                                <div class="key End"><span>End</span></div>
-                                <div class="key PageDown"><span>Page<br>Down</span></div>
-                            </div>
-                        </div>
-                        <div class="h-gap-arrow"></div>
-                        <div class="section-arrow">
-                            <div class="row">
-                                <div class="arrow-gap"></div>
-                                <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
-                                <div class="arrow-gap"></div>
-                            </div>
-                            <div class="row">
-                                <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
-                                <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
-                                <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div id="kb-75" class="hide">
-                    <div class="section">
-                        <div class="row">
-                            <div class="key Escape"><span>Esc</span></div>
-                            <div class="key F1"><span>F1</span></div>
-                            <div class="key F2"><span>F2</span></div>
-                            <div class="key F3"><span>F3</span></div>
-                            <div class="key F4"><span>F4</span></div>
-                            <div class="key F5"><span>F5</span></div>
-                            <div class="key F6"><span>F6</span></div>
-                            <div class="key F7"><span>F7</span></div>
-                            <div class="key F8"><span>F8</span></div>
-                            <div class="key F9"><span>F9</span></div>
-                            <div class="key F10"><span>F10</span></div>
-                            <div class="key F11"><span>F11</span></div>
-                            <div class="key F12"><span>F12</span></div>
-                            <div class="key PrintScreen"><span>PrtSc</span></div>
-                            <div class="key Insert"><span>Insert</span></div>
-                            <div class="key Delete"><span>Del</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key Backquote"><span>`</span></div>
-                            <div class="key Digit1"><span>1</span></div>
-                            <div class="key Digit2"><span>2</span></div>
-                            <div class="key Digit3"><span>3</span></div>
-                            <div class="key Digit4"><span>4</span></div>
-                            <div class="key Digit5"><span>5</span></div>
-                            <div class="key Digit6"><span>6</span></div>
-                            <div class="key Digit7"><span>7</span></div>
-                            <div class="key Digit8"><span>8</span></div>
-                            <div class="key Digit9"><span>9</span></div>
-                            <div class="key Digit0"><span>0</span></div>
-                            <div class="key Minus"><span>-</span></div>
-                            <div class="key Equal"><span>=</span></div>
-                            <div class="key Backspace"><span>Backspace</span></div>
-                            <div class="key Home"><span>Home</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key Tab"><span>Tab</div>
-                            <div class="key KeyQ"><span>Q</span></div>
-                            <div class="key KeyW"><span>W</span></div>
-                            <div class="key KeyE"><span>E</span></div>
-                            <div class="key KeyR"><span>R</span></div>
-                            <div class="key KeyT"><span>T</span></div>
-                            <div class="key KeyY"><span>Y</span></div>
-                            <div class="key KeyU"><span>U</span></div>
-                            <div class="key KeyI"><span>I</span></div>
-                            <div class="key KeyO"><span>O</span></div>
-                            <div class="key KeyP"><span>P</span></div>
-                            <div class="key BracketLeft"><span>[</span></div>
-                            <div class="key BracketRight"><span>]</span></div>
-                            <div class="key Backslash"><span>\</span></div>
-                            <div class="key PageUp"><span>Page<br>Up</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key CapsLock"><span>Caps Lock</span></div>
-                            <div class="key KeyA"><span>A</span></div>
-                            <div class="key KeyS"><span>S</span></div>
-                            <div class="key KeyD"><span>D</span></div>
-                            <div class="key KeyF"><span>F</span></div>
-                            <div class="key KeyG"><span>G</span></div>
-                            <div class="key KeyH"><span>H</span></div>
-                            <div class="key KeyJ"><span>J</span></div>
-                            <div class="key KeyK"><span>K</span></div>
-                            <div class="key KeyL"><span>L</span></div>
-                            <div class="key Semicolon"><span>;</span></div>
-                            <div class="key Quote"><span>'</span></div>
-                            <div class="key Enter"><span>Enter</span></div>
-                            <div class="key PageDown"><span>Page<br>Down</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key ShiftLeft"><span>Shift</span></div>
-                            <div class="key KeyZ"><span>Z</span></div>
-                            <div class="key KeyX"><span>X</span></div>
-                            <div class="key KeyC"><span>C</span></div>
-                            <div class="key KeyV"><span>V</span></div>
-                            <div class="key KeyB"><span>B</span></div>
-                            <div class="key KeyN"><span>N</span></div>
-                            <div class="key KeyM"><span>M</span></div>
-                            <div class="key Comma"><span>,</span></div>
-                            <div class="key Period"><span>.</span></div>
-                            <div class="key Slash"><span>/</span></div>
-                            <div class="key ShiftRight"><span>Shift</span></div>
-                            <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
-                            <div class="key End"><span>End</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key ControlLeft"><span>Ctrl</span></div>
-                            <div class="key AltLeft"><span>Alt</span></div>
-                            <div class="key MetaLeft"><span>Win</span></div>
-                            <div class="key Space"><span>Space</span></div>
-                            <div class="key AltRight"><span>Alt</span></div>
-                            <div class="key Fn"><span>Fn</span></div>
-                            <div class="key ControlRight"><span>Ctrl</span></div>
-                            <div class="gap"></div>
-                            <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
-                            <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
-                            <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div id="kb-65" class="hide">
-                    <div class="section">
-                        <div class="row">
-                            <div class="key Escape"><span>Esc</span></div>
-                            <div class="key Digit1"><span>1</span></div>
-                            <div class="key Digit2"><span>2</span></div>
-                            <div class="key Digit3"><span>3</span></div>
-                            <div class="key Digit4"><span>4</span></div>
-                            <div class="key Digit5"><span>5</span></div>
-                            <div class="key Digit6"><span>6</span></div>
-                            <div class="key Digit7"><span>7</span></div>
-                            <div class="key Digit8"><span>8</span></div>
-                            <div class="key Digit9"><span>9</span></div>
-                            <div class="key Digit0"><span>0</span></div>
-                            <div class="key Minus"><span>-</span></div>
-                            <div class="key Equal"><span>=</span></div>
-                            <div class="key Backspace"><span>Backspace</span></div>
-                            <div class="key Delete"><span>Del</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key Tab"><span>Tab</div>
-                            <div class="key KeyQ"><span>Q</span></div>
-                            <div class="key KeyW"><span>W</span></div>
-                            <div class="key KeyE"><span>E</span></div>
-                            <div class="key KeyR"><span>R</span></div>
-                            <div class="key KeyT"><span>T</span></div>
-                            <div class="key KeyY"><span>Y</span></div>
-                            <div class="key KeyU"><span>U</span></div>
-                            <div class="key KeyI"><span>I</span></div>
-                            <div class="key KeyO"><span>O</span></div>
-                            <div class="key KeyP"><span>P</span></div>
-                            <div class="key BracketLeft"><span>[</span></div>
-                            <div class="key BracketRight"><span>]</span></div>
-                            <div class="key Backslash"><span>\</span></div>
-                            <div class="key Home"><span>Home</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key CapsLock"><span>Caps Lock</span></div>
-                            <div class="key KeyA"><span>A</span></div>
-                            <div class="key KeyS"><span>S</span></div>
-                            <div class="key KeyD"><span>D</span></div>
-                            <div class="key KeyF"><span>F</span></div>
-                            <div class="key KeyG"><span>G</span></div>
-                            <div class="key KeyH"><span>H</span></div>
-                            <div class="key KeyJ"><span>J</span></div>
-                            <div class="key KeyK"><span>K</span></div>
-                            <div class="key KeyL"><span>L</span></div>
-                            <div class="key Semicolon"><span>;</span></div>
-                            <div class="key Quote"><span>'</span></div>
-                            <div class="key Enter"><span>Enter</span></div>
-                            <div class="key PageUp"><span>Page<br>Up</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key ShiftLeft"><span>Shift</span></div>
-                            <div class="key KeyZ"><span>Z</span></div>
-                            <div class="key KeyX"><span>X</span></div>
-                            <div class="key KeyC"><span>C</span></div>
-                            <div class="key KeyV"><span>V</span></div>
-                            <div class="key KeyB"><span>B</span></div>
-                            <div class="key KeyN"><span>N</span></div>
-                            <div class="key KeyM"><span>M</span></div>
-                            <div class="key Comma"><span>,</span></div>
-                            <div class="key Period"><span>.</span></div>
-                            <div class="key Slash"><span>/</span></div>
-                            <div class="key ShiftRight"><span>Shift</span></div>
-                            <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
-                            <div class="key PageDown"><span>Page<br>Down</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="key ControlLeft"><span>Ctrl</span></div>
-                            <div class="key AltLeft"><span>Alt</span></div>
-                            <div class="key MetaLeft"><span>Win</span></div>
-                            <div class="key Space"><span>Space</span></div>
-                            <div class="key AltRight"><span>Alt</span></div>
-                            <div class="key Fn"><span>Fn</span></div>
-                            <div class="key ControlRight"><span>Ctrl</span></div>
-                            <div class="gap"></div>
-                            <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
-                            <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
-                            <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div id="kb-60" class="hide">
-                    <div>
+        
+                    <div id="kb-65" class="hide">
                         <div class="section">
                             <div class="row">
                                 <div class="key Escape"><span>Esc</span></div>
@@ -566,6 +484,7 @@
                                 <div class="key Minus"><span>-</span></div>
                                 <div class="key Equal"><span>=</span></div>
                                 <div class="key Backspace"><span>Backspace</span></div>
+                                <div class="key Delete"><span>Del</span></div>
                             </div>
                             <div class="row">
                                 <div class="key Tab"><span>Tab</div>
@@ -582,6 +501,7 @@
                                 <div class="key BracketLeft"><span>[</span></div>
                                 <div class="key BracketRight"><span>]</span></div>
                                 <div class="key Backslash"><span>\</span></div>
+                                <div class="key Home"><span>Home</span></div>
                             </div>
                             <div class="row">
                                 <div class="key CapsLock"><span>Caps Lock</span></div>
@@ -597,6 +517,7 @@
                                 <div class="key Semicolon"><span>;</span></div>
                                 <div class="key Quote"><span>'</span></div>
                                 <div class="key Enter"><span>Enter</span></div>
+                                <div class="key PageUp"><span>Page<br>Up</span></div>
                             </div>
                             <div class="row">
                                 <div class="key ShiftLeft"><span>Shift</span></div>
@@ -611,6 +532,8 @@
                                 <div class="key Period"><span>.</span></div>
                                 <div class="key Slash"><span>/</span></div>
                                 <div class="key ShiftRight"><span>Shift</span></div>
+                                <div class="key ArrowUp"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                <div class="key PageDown"><span>Page<br>Down</span></div>
                             </div>
                             <div class="row">
                                 <div class="key ControlLeft"><span>Ctrl</span></div>
@@ -618,9 +541,90 @@
                                 <div class="key MetaLeft"><span>Win</span></div>
                                 <div class="key Space"><span>Space</span></div>
                                 <div class="key AltRight"><span>Alt</span></div>
-                                <div class="key MetaRight"><span>Win</span></div>
                                 <div class="key Fn"><span>Fn</span></div>
                                 <div class="key ControlRight"><span>Ctrl</span></div>
+                                <div class="gap"></div>
+                                <div class="key ArrowLeft"><span><i class="fa-solid fa-arrow-left"></i></span></div>
+                                <div class="key ArrowDown"><span><i class="fa-solid fa-arrow-down"></i></span></div>
+                                <div class="key ArrowRight"><span><i class="fa-solid fa-arrow-right"></i></span></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="kb-60" class="hide">
+                        <div>
+                            <div class="section">
+                                <div class="row">
+                                    <div class="key Escape"><span>Esc</span></div>
+                                    <div class="key Digit1"><span>1</span></div>
+                                    <div class="key Digit2"><span>2</span></div>
+                                    <div class="key Digit3"><span>3</span></div>
+                                    <div class="key Digit4"><span>4</span></div>
+                                    <div class="key Digit5"><span>5</span></div>
+                                    <div class="key Digit6"><span>6</span></div>
+                                    <div class="key Digit7"><span>7</span></div>
+                                    <div class="key Digit8"><span>8</span></div>
+                                    <div class="key Digit9"><span>9</span></div>
+                                    <div class="key Digit0"><span>0</span></div>
+                                    <div class="key Minus"><span>-</span></div>
+                                    <div class="key Equal"><span>=</span></div>
+                                    <div class="key Backspace"><span>Backspace</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key Tab"><span>Tab</div>
+                                    <div class="key KeyQ"><span>Q</span></div>
+                                    <div class="key KeyW"><span>W</span></div>
+                                    <div class="key KeyE"><span>E</span></div>
+                                    <div class="key KeyR"><span>R</span></div>
+                                    <div class="key KeyT"><span>T</span></div>
+                                    <div class="key KeyY"><span>Y</span></div>
+                                    <div class="key KeyU"><span>U</span></div>
+                                    <div class="key KeyI"><span>I</span></div>
+                                    <div class="key KeyO"><span>O</span></div>
+                                    <div class="key KeyP"><span>P</span></div>
+                                    <div class="key BracketLeft"><span>[</span></div>
+                                    <div class="key BracketRight"><span>]</span></div>
+                                    <div class="key Backslash"><span>\</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key CapsLock"><span>Caps Lock</span></div>
+                                    <div class="key KeyA"><span>A</span></div>
+                                    <div class="key KeyS"><span>S</span></div>
+                                    <div class="key KeyD"><span>D</span></div>
+                                    <div class="key KeyF"><span>F</span></div>
+                                    <div class="key KeyG"><span>G</span></div>
+                                    <div class="key KeyH"><span>H</span></div>
+                                    <div class="key KeyJ"><span>J</span></div>
+                                    <div class="key KeyK"><span>K</span></div>
+                                    <div class="key KeyL"><span>L</span></div>
+                                    <div class="key Semicolon"><span>;</span></div>
+                                    <div class="key Quote"><span>'</span></div>
+                                    <div class="key Enter"><span>Enter</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ShiftLeft"><span>Shift</span></div>
+                                    <div class="key KeyZ"><span>Z</span></div>
+                                    <div class="key KeyX"><span>X</span></div>
+                                    <div class="key KeyC"><span>C</span></div>
+                                    <div class="key KeyV"><span>V</span></div>
+                                    <div class="key KeyB"><span>B</span></div>
+                                    <div class="key KeyN"><span>N</span></div>
+                                    <div class="key KeyM"><span>M</span></div>
+                                    <div class="key Comma"><span>,</span></div>
+                                    <div class="key Period"><span>.</span></div>
+                                    <div class="key Slash"><span>/</span></div>
+                                    <div class="key ShiftRight"><span>Shift</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="key ControlLeft"><span>Ctrl</span></div>
+                                    <div class="key AltLeft"><span>Alt</span></div>
+                                    <div class="key MetaLeft"><span>Win</span></div>
+                                    <div class="key Space"><span>Space</span></div>
+                                    <div class="key AltRight"><span>Alt</span></div>
+                                    <div class="key MetaRight"><span>Win</span></div>
+                                    <div class="key Fn"><span>Fn</span></div>
+                                    <div class="key ControlRight"><span>Ctrl</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
