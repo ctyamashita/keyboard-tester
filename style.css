@@ -97,6 +97,10 @@ select {
     scale: 1.2;
 }
 
+.screen-container {
+    padding: 0 1.25rem;
+}
+
 .screen {
     padding: 1rem 1.5rem;
     border-radius: 1rem;
@@ -135,6 +139,12 @@ select {
     filter: drop-shadow(.3rem .3rem 8px gray);
     padding: 0 1rem;
     position: relative;
+}
+
+.frame {
+    width: calc(100vw - 2.5rem);
+    overflow-x: scroll;
+    min-width: 500px;
 }
 
 .options {
