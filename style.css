@@ -142,7 +142,7 @@ select {
 }
 
 .frame {
-    width: calc(100vw - 2.5rem);
+    max-width: calc(100vw - 2.5rem);
     overflow-x: scroll;
     min-width: 500px;
 }
